@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    box-sizing: border-box;
+    overflow: hidden;
+    *{
+        box-sizing: border-box;
+        position: relative;
+    }
+}
+.cardefect{
+    position: absolute;
+    width: 220px;
+    height: 350px;
+    left: calc(50% - 110px);
+    top: calc(50% - 175px);
+    z-index: 2;
+    border-radius: 15px;
+    box-shadow: 3px 3px 9px #000;
+    border: none;
+    transition: 100ms;
+    cursor: grab;
+}
+.cardefect:last-of-type{
+    z-index: 4;
+}
+.cardefect:nth-child(1){
+    transform: rotate(-7deg);
+}
+.cardefect:nth-child(2){
+    transform: rotate(7deg);
+}
+.cardefect:nth-child(3){
+    transform: rotate(3deg);
+}
+.cardefect:nth-child(4){
+    transform: rotate(-3deg);
+}
